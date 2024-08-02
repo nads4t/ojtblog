@@ -28,6 +28,7 @@
     font-size: 7rem;
     position: relative;
     display: inline-block;
+    text-align: left;
 }
 
 .blue a {
@@ -90,21 +91,21 @@
     border-radius: 50%;
 }
 
-.red {
+.neon {
     height: 100vh;
-    background-color: red;
+    background-color: #7789ab;
     display: flex;
     justify-content: center;  
 }
 
-.red-header {
-    color: black;
+.neon-header {
+    color: #c7f022;
     font-size: 12rem;
     text-align: center;
     font-weight: 500;
 }
 
-.red img {
+.neon img {
     width: 35vw; /* Responsive width based on viewport width */
     height: auto; /* Maintain aspect ratio */
     margin-left: 2rem;
@@ -135,6 +136,7 @@
     margin-bottom: 3rem;
     width: 100%;
     max-width: 90rem; /* Optional: Set a max width for the row */
+    color: #c7f022;
 }
 
 .col-title {
@@ -146,4 +148,145 @@
     font-size: 18px;
     font-weight: 400;
 
+}
+
+
+.black {
+    height: 100vh;
+    background-color: #101820;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.black img {
+    height: 100vh;
+    margin: 0;
+}
+
+.text-col {
+    color: white;
+    padding: 50px;
+    overflow-y: auto;
+    max-height: 100vh;
+    max-width: 58rem;
+}
+
+.black-body{
+    font-size: 18px;
+    text-align: justify;
+    
+}
+
+.black-title{
+    font-size: 8rem;
+    font-weight: 500;
+    color: #fee715;
+}
+
+.green {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #06eb1c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green img {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    animation: float 20s infinite alternate ease-in-out;
+}
+
+.green img:nth-child(2) {
+    animation-duration: 18s;
+    animation-delay: 0s;
+}
+
+.green img:nth-child(3) {
+    animation-duration: 20s;
+    animation-delay: 2s;
+}
+
+.green img:nth-child(4) {
+    animation-duration: 22s;
+    animation-delay: 4s;
+}
+
+.green img:nth-child(5) {
+    animation-duration: 24s;
+    animation-delay: 6s;
+}
+
+.green img:nth-child(6) {
+    animation-duration: 26s;
+    animation-delay: 8s;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(20vw, 15vh);
+    }
+    40% {
+        transform: translate(-15vw, 25vh);
+    }
+    60% {
+        transform: translate(25vw, -20vh);
+    }
+    80% {
+        transform: translate(-20vw, -25vh);
+    }
+    100% {
+        transform: translate(15vw, 20vh);
+    }
+}
+
+.green-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.red {
+    height: 100vh;
+    background-color: #ff1800;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Set relative positioning for absolute positioning of the text */
+}
+
+.red-square {
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    border: solid;
+    text-align: justify;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; 
+    font-size: 3rem;
+    text-align: center; 
+    z-index: 1; 
+    font-weight: 500;    
 }
