@@ -1,0 +1,136 @@
+@import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/project-blackbird');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PP Neue Montreal', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none; /* Removes underline */
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+}
+
+.blue {
+    background-color: #1D00B4;
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue p {
+    color: white;
+    font-size: 7rem;
+    position: relative;
+    display: inline-block;
+}
+
+.blue a {
+    display: inline-block; /* Makes the <a> element fit the text */
+    text-decoration: none; /* Removes underline */
+}
+
+.blue span {
+    position: relative;
+    color: white;
+}
+
+.blue span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* Adjust based on the font size */
+    width: 0;
+    height: 5px;
+    background: white;
+    transition: width 0.4s ease;
+}
+
+.blue a:hover span::after {
+    width: 100%;
+}
+
+.white {
+    background-color: #F1E4D5;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header p {
+    font-weight: 450;
+    font-size: 1.8rem;
+    color: black;
+    padding: 20px; /* Adjust the padding value as needed */
+}
+
+.circle {
+    background-color: #1E1E1E;
+    width: 50vw; /* Responsive width based on viewport width */
+    height: 50vw; /* Keep the height equal to width for a perfect circle */
+    max-width: 500px; /* Optional: Max size to prevent it from getting too large */
+    max-height: 500px; /* Optional: Max size to prevent it from getting too large */
+    border-radius: 50%;
+}
+
+.red {
+    height: 100vh;
+    width: 100%; /* Changed from 'full' to '100%' */
+    background-color: red;
+    display: flex;
+    justify-content: center;  
+}
+
+.red-header{
+    color: black;
+    font-size: 12rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.red img{
+    width: 35vw; /* Responsive width based on viewport width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.col-1, .col-2, .col-3{
+    flex: 1;
+}
+
+.col-body{
+    text-align: justify;
+}
+
+
+
+
+
+
