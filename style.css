@@ -277,6 +277,11 @@
     background-color: white;
     border: solid;
     text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    font-size: 18px;
 }
 
 .text-overlay {
