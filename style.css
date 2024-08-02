@@ -295,3 +295,28 @@
     z-index: 1; 
     font-weight: 500;    
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+    .white {
+        order: -1; /* Move .white on top */
+    }
+    .blue p {
+        font-size: 3rem; /* Make text smaller on smaller screens */
+    }
+    .header p {
+        font-size: 1.2rem; /* Make header text smaller */
+    }
+}
+
+@media (max-width: 480px) {
+    .blue p {
+        font-size: 2rem; /* Further reduce text size for very small screens */
+    }
+    .header p {
+        font-size: 1rem; /* Further reduce header text size */
+    }
+}
+
