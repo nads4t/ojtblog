@@ -1,6 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/project-blackbird');
+@import url('https://fonts.cdnfonts.com/css/roboto-serif');
 
 * {
     margin: 0;
@@ -94,43 +92,58 @@
 
 .red {
     height: 100vh;
-    width: 100%; /* Changed from 'full' to '100%' */
     background-color: red;
     display: flex;
     justify-content: center;  
 }
 
-.red-header{
+.red-header {
     color: black;
     font-size: 12rem;
     text-align: center;
     font-weight: 500;
 }
 
-.red img{
+.red img {
     width: 35vw; /* Responsive width based on viewport width */
     height: auto; /* Maintain aspect ratio */
     margin-left: 2rem;
     margin-bottom: 2rem;
-
 }
 
-.row{
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center; /* Center content horizontally */
+}
+
+.beginning {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.row {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
-}
-
-.col-1, .col-2, .col-3{
-    flex: 1;
-}
-
-.col-body{
     text-align: justify;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 90rem; /* Optional: Set a max width for the row */
 }
 
+.col-title {
+    font-size: 24px;
+    font-weight: 500;
+}
 
+.col-body {
+    font-size: 18px;
+    font-weight: 400;
 
-
-
-
+}
